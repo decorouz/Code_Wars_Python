@@ -1,6 +1,6 @@
 import unittest
 
-from solution20_21 import array_diff
+from solutions import array_diff, spinning_words
 
 
 class TestArrayDiff(unittest.TestCase):
@@ -17,3 +17,4 @@ class TestArrayDiff(unittest.TestCase):
                           "a was [], b was [1,2], expected []")
         self.assertEquals(array_diff([1, 2, 3], [1, 2]), [
             3], "a was [1,2,3], b was [1, 2], expected [3]")
+        self.assertEquals(spinning_words("Welcome"), "emocleW")
